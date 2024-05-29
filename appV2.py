@@ -23,7 +23,7 @@ def live_transcription():
     # Keep running indefinitely
     try:
         while True:
-            sleep(0.001)  # Check every 0.1 seconds
+            sleep(0.001)  # Check every n seconds
     except KeyboardInterrupt:
         # Stop the background listening process upon keyboard interrupt
         stop_listening(wait_for_stop=False)
